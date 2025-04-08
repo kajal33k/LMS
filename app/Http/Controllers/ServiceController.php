@@ -2,22 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
-use App\Models\Banner;
 
-class BannerController extends Controller
-
-
+class ServiceController extends Controller
 {
+
+
     public function index()
     {
-        $banners = Banner::latest()->paginate(10);
-        return view('backend.banner.index', compact('banners'));
+        $services = Service::latest()->paginate(10);
+        return view('backend.service.index', compact('services'));
     }
 
     public function create()
     {
-        return view('backend.banner.create');
+        return view('backend.service.create');
     }
 
     public function store(Request $request)
@@ -29,12 +29,11 @@ class BannerController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('banners', 'public');
+            $data['image'] = $request->file('image')->store('services', 'public');
         }
 
-        Banner::create($data);
+        Service::create($data);
 
-        return redirect()->route('backend.banner.index')->with('success', 'Banner created successfully.');
+        return redirect()->route('backend.service.index')->with('success', 'Service created successfully.');
     }
 }
-

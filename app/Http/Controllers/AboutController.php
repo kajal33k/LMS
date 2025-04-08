@@ -3,21 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Banner;
+use App\Models\About;
 
-class BannerController extends Controller
+class AboutController extends Controller
 
 
 {
     public function index()
     {
-        $banners = Banner::latest()->paginate(10);
-        return view('backend.banner.index', compact('banners'));
+        $abouts = About::latest()->paginate(10);
+        return view('backend.about.index', compact('abouts'));
     }
 
     public function create()
     {
-        return view('backend.banner.create');
+        return view('backend.about.create');
     }
 
     public function store(Request $request)
@@ -29,12 +29,12 @@ class BannerController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('banners', 'public');
+            $data['image'] = $request->file('image')->store('abouts', 'public');
         }
 
-        Banner::create($data);
+        About::create($data);
 
-        return redirect()->route('backend.banner.index')->with('success', 'Banner created successfully.');
+        return redirect()->route('backend.about.index')->with('success', 'about created successfully.');
     }
 }
 
