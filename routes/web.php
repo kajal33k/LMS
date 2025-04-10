@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
@@ -24,6 +25,12 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+// -------------------------------FRONTEND ROUTES----------------------------
+Route::get('/learning', [FrontendController::class, 'learning'])->name('frontend.learning');
+Route::get('/course', [FrontendController::class, 'course'])->name('frontend.course');
+Route::get('/pricing', [FrontendController::class, 'pricing'])->name('frontend.pricing');
+Route::get('/employee', [FrontendController::class, 'employee'])->name('frontend.employee');
 
 //---------------------------BACKEND ROUTES ---------------------------------
 
