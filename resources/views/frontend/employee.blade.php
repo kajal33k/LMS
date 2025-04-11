@@ -110,5 +110,22 @@
         </div>
     </div>
 </section>
-
+{{-- TRAINING PLATFORMS --}}
+<div>
+    <div>
+       <div>
+        <span></span>
+        <h1>Personalized Learning Paths</h1>
+       </div>
+        <p>GOLS LMS allows you to create personalized learning paths for each employee based on their role, skill level, and learning objectives. This ensures targeted and efficient training delivery.</p>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
 @endsection
