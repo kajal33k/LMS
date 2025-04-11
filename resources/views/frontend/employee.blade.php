@@ -83,28 +83,59 @@
 {{-- TRAINING PLATFORMS --}}
 <section class="bg-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10">
-            <h2 class="text-3xl font-bold text-gray-900">Training Platform Benefits</h2>
-            <p class="text-gray-600 mt-2 text-lg">Powerful, flexible tools to support your workforce.</p>
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900">Training Platform Benefits</h2>
+        <p class="text-gray-600 mt-2 text-lg">Powerful, flexible tools to support your workforce.</p>
+      </div>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Personalized Learning Paths</h3>
+          <p class="text-gray-600 text-sm">Tailored content for each employee based on role, skills, and goals.</p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            @foreach(range(1, 9) as $i)
-                <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition duration-300">
-                    <div class="flex items-center space-x-4 mb-4">
-                        <div class="text-3xl text-blue-600">
-                            <!-- Replace with dynamic icon if needed -->
-                            <span>📘</span>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-800">Personalized Learning Paths</h3>
-                    </div>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        GOLS LMS allows you to create personalized learning paths for each employee based on their role, skill level, and learning objectives. This ensures targeted and efficient training delivery.
-                    </p>
-                </div>
-            @endforeach
+  
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Real-Time Analytics</h3>
+          <p class="text-gray-600 text-sm">Monitor progress and performance with live data and reports.</p>
         </div>
+  
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Goal-Oriented Modules</h3>
+          <p class="text-gray-600 text-sm">Structured learning with clear outcomes and tracking.</p>
+        </div>
+  
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Mobile Friendly</h3>
+          <p class="text-gray-600 text-sm">Access training anytime, anywhere on any device.</p>
+        </div>
+  
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Collaborative Tools</h3>
+          <p class="text-gray-600 text-sm">Encourage peer learning through discussions and teamwork.</p>
+        </div>
+  
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Secure & Compliant</h3>
+          <p class="text-gray-600 text-sm">Built with privacy, security, and compliance in mind.</p>
+        </div>
+  
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Flexible Scheduling</h3>
+          <p class="text-gray-600 text-sm">Self-paced or scheduled learning to fit any workflow.</p>
+        </div>
+  
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Certification Tracking</h3>
+          <p class="text-gray-600 text-sm">Manage and verify training certifications easily.</p>
+        </div>
+  
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow transition duration-200">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Easy Integration</h3>
+          <p class="text-gray-600 text-sm">Connect with existing HR or LMS systems smoothly.</p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
+  
 @endsection
